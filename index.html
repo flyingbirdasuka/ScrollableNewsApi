@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+        <title>Picture in Picture</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="button-container">
+            <span id="toggle-icon">
+                <span class="toggle-text">Light Mode</span>
+            </span>
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+            </label>
+        </div>
+        
+        <div class="container">
+            <div class="modal">
+                <div class="choice-container">
+                    Keyword : 
+                    <input type="text" class="keyword" name="keyword">
+        
+                    Language :
+                    <select name="language" id="language" class="language">
+                        <option value="nl">Dutch</option>
+                        <option value="en">English</option>
+                        <option value="de">German</option>
+                        <option value="fr">French</option>
+                        <option value="it">Italian</option>
+                      </select>
+                      <button id="search">Search</button>
+                </div>
+            </div>
+            <div class="results-container">
+            </div>
+        </div>
+        
+        <script src="script.js"></script>
+    </body>
+</html>
